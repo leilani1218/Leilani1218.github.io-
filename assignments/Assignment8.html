@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Semantic Layout</title>
+    <title>Semantic Layout Example</title>
     <style>
-      header {
-        background-color: red;
+      #header,
+      #nav,
+      #main,
+      #footer {
+        background-color: pink;
+        margin: 12px;
+        padding: 24px;
+      }
+
+      .section {
+        background-color: lightblue;
+        margin: 8px;
       }
     </style>
   </head>
   <body>
-    <header>
-      <img src="../../images/bougie_dog.jpeg" alt="#"
-      <h1>Symphori Games</h1>
+    <header id="header">
+      <h1>Semantic Layout Example</h1>
     </header>
-    <nav></nav>
-    <main>
-      <aside></aside>
-      <section></section>
+    <nav id="nav">NAVIGATION</nav>
+    <main id="main">
+      <h2>MAIN SECTION</h2>
+      <section class="section">NESTED SECTION 1</section>
+      <section class="section">NESTED SECTION 2</section>
     </main>
-    <footer>
+    <footer id="footer">FOOTER</footer>
   </body>
 </html>
