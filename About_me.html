@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>HELLO WORLD</title>
+    <title>Semantic Layout Example</title>
+    <style>
+      #header,
+      #footer,
+      #main  {
+        background-color: pink;
+        margin: 12px;
+        padding: 24px;
+        color: lightyellow
+      }
+
+    </style>
   </head>
   <body>
-    <h1>About menu</h1>
+    <header id="header">
+      <h1>About me</h1>
+    </header>
+    <main id="main">
+      <h2>Leilani Rivera Martinez</h2>
+      <h3>Graphic Designer</h3>
+      <section class="section">Current student, has proir exprince in production, set design and assistant director.</section>
+
+      <section class="section"> Knowlege in multiple adobe apps such as illustrator, photoshop, and after effects. </section>
+    </main>
+    <footer id="footer">Student at F.I.R.S.T Institute </footer>
+
   </body>
 </html>

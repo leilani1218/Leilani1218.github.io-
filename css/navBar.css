@@ -2,20 +2,20 @@ nav ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  background-color: magenta;
+  background-color: pink;
 }
 nav ul li {
   display: inline-block;
-  background-color: magenta;
+  background-color: pink;
   padding: 8px 24px;
 }
 nav ul li:hover {
-  background-color: orange;
+  background-color: lightblue;
 }
 nav ul li:active {
   background-color: red;
 }
 ul li a {
-  color: skyblue;
+  color: white;
   text-decoration: none;
 }
