@@ -13,7 +13,7 @@ nav ul li:hover {
   background-color: lightblue;
 }
 nav ul li:active {
-  background-color: red;
+  background-color: lavender;
 }
 ul li a {
   color: white;

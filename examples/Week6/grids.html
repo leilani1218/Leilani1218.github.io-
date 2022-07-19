@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grids </title>
+    <style>
+      #myGrid {
+        display: grid;
+        grid-template-columns: 333px 1fr;
+        grid-auto-rows: minmax(50px, auto);
+        grid-template-areas:
+        ". header header header ."
+        ". navbar navbar navbar ."
+        ". banner banner banner ."
+        ". cards  cards  cards  ."
+        ". aside  blog   blog   ."
+        ". footer footer footer .";
+      }
+      header {
+        background-color: red;
+        grid-area: myHeader;
+      }
+      aside {
+        background-color: skyblue;
+        grid-area: myaside;
+      }
+      main {
+        background-color: green;
+        grid-area: myBlog;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="myGrid">
+    <header>HEADER</header>
+    <nav>NAVBAR</nav>
+    <section id="banner">BANNER</section>
+    <section id="cards">CARDS</section>
+    <aside>ASIDE</aside>
+    <main>MAIN</main>
+    <footer>FOOTER</footer>
+   </div>
+  </body>
+</html>

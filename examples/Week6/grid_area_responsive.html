@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title> Grid Area  (Responsive) </title>
+    <style>
+    .myGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minimax(50px, auto);
+        grid-template-areas:
+        "myHeader myHeader myHeader"
+        "sidenav  content  content";
+      }
+      header{
+        background-color: lightgreen;
+        padding: 36px;
+        grid-area: myHeader;
+      }
+      nav {
+        background-color: #DDFFDD;
+        padding: 36px;
+        grid-area: sidenav;
+       }
+       main {
+         padding: 36px;
+         grid-area: content;
+       }
+       @media screen and (max-width: 480px) {
+         .myGrid {
+           grid-template-columns: 1fr;
+           grid-template-areas:
+           "myHeader"
+           "sidenav"
+           "content";
+         }
+         header,
+         nav,
+         main {
+           padding: 18px;
+         }
+         header,
+         nav {
+           text-align: center;
+         }
+         header h1 {
+           fobt-size: 24px;
+           margin: 0px;
+         }
+       }
+    </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <header>
+        <h1>Grid Areas Responsive Demo</h1>
+      </header>
+      <nav>NAVIGATION GOES HERE</nav>
+      <main>
+        <p>
+          Dolor o in dolore aliquip. Proident iis consequat in tamen
+          incididunt praesentibus. Iis iudicem cohaerescant, si enim
+          excepteur domesticarum, tamen possumus fabulas, nam multos
+          ita esse, ullamco domesticarum ut litteris, ne iis
+          philosophari, ad ingeniis sed cernantur, ut eiusmod
+          arbitrantur. Constias ad dolore ingeniis.Noster consequat
+          tractavissent. Amet eruditionem possumus aliqua admodum,
+          amet ad possumus est irure, ita ubi eram ingeniis do
+          incididunt ex velit. Ullamco dolore consequat consequat, si
+          quis cillum multos probant.
+        </p>
+        In irure sed aute. Fore voluptate commodo. Sint laboris te
+        philosophari eu a ad tempor aliquip an a ita voluptatibus,
+        veniam doctrina nam despicationes.Occaecat exquisitaque ab
+        excepteur iis do ex aute malis magna ex sunt a commodo, ubi
+        probant imitarentur de incurreret se elit singulis ut
+        iudicem duis admodum, fore ad cupidatat ubi irure ex nostrud
+        noster labore do irure. Excepteur illum dolor arbitror nisi,
+        probant multos enim cupidatat legam est singulis se ipsum
+        eiusmod nam a proident praetermissum. A sint mentitum in
+        laboris ubi possumus.
+        <p>
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
