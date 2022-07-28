@@ -1,0 +1,20 @@
+body{
+  background-color:lightblue;
+  color:white;
+}
+
+/*******************************************/
+/*********** nav-list style ****************/
+/*******************************************/
+#nav-list{
+  list-style-type:none;
+}
+
+#nav-list li{
+  display:inline;
+}
+
+#nav-list li a:hover{
+  color:#fff;
+  /*background-color: cyan; */
+}
