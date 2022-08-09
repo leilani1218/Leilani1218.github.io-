@@ -1,0 +1,33 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #EC9192;
+  padding: 30px;
+  font-family: "Mali", "Comic Sans", cursive;
+}
+
+table {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+td {
+  padding: 5px 10px;
+  background-color:
+}
+
+th{
+  padding: 5px 10px;
+  background-color: #EC9192;
+  font-size: 18pt;
+  color: #16697A;
+}
+
+tr{
+  background-color: #D3EEEE;
+}
+
+tr:hover{
+
+}
