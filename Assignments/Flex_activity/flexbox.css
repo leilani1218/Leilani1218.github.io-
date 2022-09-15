@@ -1,0 +1,23 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    .menu-container{
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      background-color: #5995DA;
+      padding: 20px 0;
+    }
+
+    .menu{
+      display: flex;
+      justify-content: space-around;
+      width: 900px;
+    }
+
+    .links{
+      border: 1px solid #fff;
+    }
