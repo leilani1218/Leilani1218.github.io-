@@ -1,0 +1,49 @@
+Nav {
+  background-color: lavender;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+#home {
+  margin-right: auto;
+}
+
+.dropdownContainer {
+  position: relative;
+}
+
+.dropdownMenu {
+  background-color: skyblue;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  left: 0px;
+  top: 75%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s, top 0.5s;
+}
+
+.dropdownContainer:hover .dropdownMenu,
+dropdownMenu:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+@media only screen and (max-width: 768px) {
+  ul {
+  flex-direction: column;
+  align-items: center;
+  }
+
+}
