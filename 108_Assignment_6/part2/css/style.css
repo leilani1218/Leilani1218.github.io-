@@ -150,6 +150,17 @@ footer {
   min-height: 100px;
 }
 
+nav {
+  align-items: center;
+  display: flex;
+  margin: 0 24px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 #navLinks,
 .socialMedia {
   display: flex;
