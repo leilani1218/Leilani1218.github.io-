@@ -27,7 +27,7 @@ function getResultText(computerPick, playerPick) {
   const WIN = "You win!";
   const LOSE = "You lose!";
 
-  if (computerPick) == playerPick {
+  if (computerPick == playerPick) {
     return TIE;
   }
 
