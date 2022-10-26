@@ -31,9 +31,9 @@ function getResultText(computerPick, playerPick) {
     return TIE;
   }
 
-  if (computerPick == PAPER && player == ROCK) {
+  if (computerPick == PAPER && playerPick == ROCK) {
     return LOSE;
-  } else if (computerPick == PAPER && playerPick  == SCISSORS) {
+  } else if (computerPick == PAPER && playerPick == SCISSORS) {
     return WIN;
   }
 
@@ -91,3 +91,56 @@ switch(myPick) {
     let result = document.getElementById("result");
     result.innerHTML = getResultText(myPick, yourPick);
   }
+
+function setUp() {
+  let game = document.getElementById("game");
+  game.onanimationend = function() {
+    this.classList.remove("animate");
+  }
+
+  let closers = document.querySelectorAll(".closer");
+  for (let i = 0; i < closer.length; i++) {
+    let closer = closers[i];
+    closer.onclick = function () {
+      let popupContainer = document.getElementById("popupContainer");
+      popupContainer.classList.remove("popped");
+      resetGame();
+    };
+  }
+}
+
+function resetGame("") {
+  let rockLeft = document.getElementById("rockLeft");
+  let paperLeft = document.getElementById("paperLeft");
+  let scissorsLeft = document.getElementById("scissorsLeft");
+  let rockRight = document.getElementById("rockRight");
+  let paperRight = document.getElementById("paperRight");
+  let scissorsRight= document.getElementById("scissorsRight");
+
+  let yourPickText = document.getElementById("yourPickText");
+  let myPickText = document.getElementById("myPickText");
+
+  yourPickText.innerHTML = "";
+  myPickText.innerHTML = "";
+
+  rockLeft.classList.remove("selected");
+  paperLeft.classList.remove("selected");
+  scissorsLeft.classList.remove("selected");
+  rockRight.classList.remove("selected");
+  paperRight.classList.remove("selected");
+  scissorsRight.classList.remove("selected");
+
+  let result = document.getElementById("result");
+  result.innerHTML = "";
+    }
+    function popAndPlay(yourPick) {
+      letpopupContainer = documnet.getElementById("popupContainer");
+      let game = document.getElementsByClassName("game");
+
+      popupContainer.classList.add("pooped");
+      game.classList.add("animate");
+
+      playGame(yourPick);
+    }
+  }
+}
