@@ -43,7 +43,7 @@ function getResultText(computerPick, playerPick) {
     return WIN;
   }
 
-  if (computerPick == SCISSORS && playerPick == SCISSORS) {
+  if (computerPick == SCISSORS && playerPick == PAPER) {
     return LOSE;
   } else if (computerPick == SCISSORS && playerPick == ROCK) {
     return WIN;
